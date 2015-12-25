@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<description>shiro 配置</description>
+
+	<!-- 安全管理器 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realms">
+			<list>
+				<ref bean="securityRealm" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="securityRealm" class="com.server.security.SecurityRealm" />
+
+	<!-- Shiro生命周期处理器 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+
+	<!-- 过滤器设置 -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login" />
+		<property name="successUrl" value="/index" />
+		<property name="unauthorizedUrl" value="/404" />
+		<property name="filterChainDefinitions">
+		<!-- anon 表示匿名访问（不需要认证与授权），authc 表示需要认证  -->
+			<value>
+				<!-- 静态资源允许访问 -->
+				/app/** = anon
+				/assets/** = anon
+				<!-- 登录页允许访问 -->
+				/login = anon
+				<!-- 其他资源需要认证 -->
+				/** = authc
+			</value>
+		</property>
+	</bean>
+</beans>

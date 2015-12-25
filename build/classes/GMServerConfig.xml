@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServerConfig>
+
+	<Timer corePoolSize="8" tickDuration="1000" ticksPerWheel="60" />
+
+	<!--网络设置 -->
+	<NetSetting IsUseNewMessageHead="true">
+		<!--FE 网络设置 -->
+		<FENetSetting>
+			<LanIP>10.10.0.21</LanIP>
+			<SocketPort>8887</SocketPort>
+			
+			<getGSListPeroid>10</getGSListPeroid>
+		</FENetSetting>
+
+		<!--GS 网络设置 -->
+		<GSNetSetting>
+			<!-- 消息处理线程池相关设定 -->
+			<ExecutionHandler corePoolSize="8"
+				maxChannelMemorySize="1024000" maxTotalMemorySize="2048000000"
+				keepAliveTimeMillis="10000" />
+
+		</GSNetSetting>
+
+		<!--GMC 网络设置 -->
+		<GMCNetSetting>
+			<!-- 消息处理线程池相关设定 -->
+			<ExecutionHandler corePoolSize="8"
+				maxChannelMemorySize="1024000" maxTotalMemorySize="2048000000"
+				keepAliveTimeMillis="10000" />
+
+			<!-- 客户端会话空闲相关设定 -->
+			<Idle readerIdleTimeSeconds="60" writerIdleTimeSeconds="60"
+				allIdleTimeSeconds="0">
+				<!-- 做一个时间间隔为10秒，一圈时间为10分钟的时间轮 -->
+				<WheelTimer tickDurationSeconds="10" ticksPerWheel="60" />
+			</Idle>
+			
+			<!-- GMS向GMC开放的SOCKET端口 -->
+			<LanIP>10.10.0.199</LanIP>
+			<SocketPort>8867</SocketPort>
+			<Options>
+				<!-- 一些socket参数设置。（添加的"child."前缀。这意味着这个配置项仅适用于我们接收到的通道实例，而不是ServerSocketChannel实例） -->
+				<Option key="reuseAddress" value="true" />
+				<!-- <Option key="child.receiveBufferSize" value="1048576" /> -->
+				<Option key="child.tcpNoDelay" value="true" />
+				<Option key="child.keepAlive" value="true" />
+			</Options>
+			
+			<AllowedConnect>35</AllowedConnect>
+			<AllowedOnline>30</AllowedOnline>
+			
+		</GMCNetSetting>
+	</NetSetting>
+
+	<!-- 数据库接口及参数配置 -->
+	<DBSetting>
+
+		<!-- GM用户数据 虚拟数据库配置数据 -->
+		<GMUserDataAccess>
+
+			<!-- XML列表URL由以下指定，若不存在,则会自动创建 -->
+			<FileIODirUrl>${webapp.root}/db/</FileIODirUrl>
+		</GMUserDataAccess>
+		
+		<!-- GS列表 虚拟数据库配置数据 -->
+		<GSNameDataAccess>
+
+			<!-- XML列表URL由以下指定，若不存在,则会自动创建 -->
+			<FileIODirUrl>${webapp.root}/db/</FileIODirUrl>
+		</GSNameDataAccess>
+
+		<!-- GS GM操作日志 虚拟数据库配置数据 -->
+		<GMOpDataAccess>
+
+			<!-- 所有GS的IO输出均包含在以下定义的父目录当中,若以下父目录不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/</FileIODirUrl>
+
+			<!-- 新建当天邮件回复日志时，扫描并获取前N天的离当天最近的日志内容 注意，此值不能小于（最好等于）《GMOpLogShowDays》参数值 -->
+			<!-- 策划要求7天,测试期间由于内存不满足要求,使用3天 -->
+			<LogKeepDays>9</LogKeepDays>
+
+			<!-- 缓存中的LOG,间隔多久做一次文件保存(单位秒)(默认30,有5秒的偏移) -->
+			<CacheFlushPeriod>60</CacheFlushPeriod>
+
+			<!-- 缓存中的LOG,达到多少笔记录时做一次文件保存(默认50,有5%的偏移) -->
+			<CacheMaxSize>1000</CacheMaxSize>
+
+			<!-- 文件LOG行数达到多少行时分文件[无效,不按行数分文件] -->
+			<MaxFileLineSize>40000</MaxFileLineSize>
+		</GMOpDataAccess>
+
+		<!-- GS频道聊天日志 虚拟数据库配置数据 -->
+		<GSChatLogDataAccess>
+
+			<!-- 所有GS的IO输出均包含在以下定义的父目录当中,若以下父目录不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GSServer/GS_GSName/GSChatLog/</FileIODirUrl>
+
+			<!-- 用于格式化一个日志的格式 参数如下 int channelType, String senderName, String receiverName, 
+				String content -->
+			<LogFormat>%-3d %-10s %-10s %-1s</LogFormat>
+
+			<!-- 缓存中的LOG,间隔多久做一次文件保存(单位秒)(默认60,有5秒的偏移) -->
+			<CacheFlushPeriod>120</CacheFlushPeriod>
+
+			<!-- 缓存中的LOG,达到多少笔记录时做一次文件保存(默认500,有5%的偏移) -->
+			<CacheMaxSize>1000</CacheMaxSize>
+
+			<!-- 文件LOG行数达到多少行时分文件 -->
+			<MaxFileLineSize>40000</MaxFileLineSize>
+		</GSChatLogDataAccess>
+
+		<!-- GS邮件日志 虚拟数据库配置数据 -->
+		<GSMailDataAccess>
+
+			<!-- 所有GS的IO输出均包含在以下定义的父目录当中,若以下父目录不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GSServer/GS_GSName/GSMailLog/</FileIODirUrl>
+
+			<!-- 新建当天邮件回复日志时，扫描并获取前N天的离当天最近的日志内容 注意，此值不能小于（最好等于）《RoleMailHistoryShowDays》参数值 -->
+			<!-- 策划要求5天,测试期间由于内存不满足要求,使用3天 -->
+			<LogKeepDays>7</LogKeepDays>
+
+			<!-- 缓存中的LOG,间隔多久做一次文件保存(单位秒)(默认60,有5秒的偏移) -->
+			<CacheFlushPeriod>120</CacheFlushPeriod>
+
+			<!-- 缓存中的LOG,达到多少笔记录时做一次文件保存(默认60,有5%的偏移) -->
+			<CacheMaxSize>1000</CacheMaxSize>
+
+			<!-- 文件LOG行数达到多少行时分文件[无效,不按行数分文件] -->
+			<MaxFileLineSize>40000</MaxFileLineSize>
+		</GSMailDataAccess>
+		
+		<!-- GS列表 虚拟数据库配置数据 -->
+		<GSForbidCallAccess>
+
+			<!-- XML列表URL由以下指定，若不存在,则会自动创建 -->
+			<FileIODirUrl>${webapp.root}/db/</FileIODirUrl>
+		</GSForbidCallAccess>
+
+		<!-- GS公告列表 虚拟数据库配置数据 -->
+		<GSNoticeDataAccess>
+
+			<!-- XML列表URL由以下指定，若不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GSServer/GS_GSName/</FileIODirUrl>
+		</GSNoticeDataAccess>
+
+		<!-- GS状态日志 虚拟数据库配置数据 -->
+		<GSStateDataAccess>
+
+			<!-- 所有GS的IO输出均包含在以下定义的父目录当中,若以下父目录不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GSServer/GS_GSName/GSStateLog/</FileIODirUrl>
+
+			<!-- 缓存中的LOG,间隔多久做一次文件保存(单位秒)(默认120,有5秒的偏移) -->
+			<CacheFlushPeriod>120</CacheFlushPeriod>
+
+			<!-- 缓存中的LOG,达到多少笔记录时做一次文件保存(默认30,有5%的偏移) -->
+			<CacheMaxSize>50</CacheMaxSize>
+
+			<!-- 文件LOG行数达到多少行时分文件[无效,不按行数分文件] -->
+			<MaxFileLineSize>40000</MaxFileLineSize>
+		</GSStateDataAccess>
+
+
+		<!-- GM统计日志 虚拟数据库配置数据 -->
+		<GMWorkDataAccess>
+
+			<!-- 所有GS的IO输出均包含在以下定义的父目录当中,若以下父目录不存在,则会自动创建 GSName会在代码中被替换成真实GS名称 -->
+			<FileIODirUrl>${webapp.root}/db/GMWorkData/</FileIODirUrl>
+
+			<!-- 缓存中的LOG,间隔多久做一次文件保存(单位秒)(默认120,有5秒的偏移) -->
+			<CacheFlushPeriod>20</CacheFlushPeriod>
+
+			<!-- 缓存中的LOG,达到多少笔记录时做一次文件保存(默认30,有5%的偏移) -->
+			<CacheMaxSize>10</CacheMaxSize>
+
+			<!-- 文件LOG行数达到多少行时分文件[无效,不按行数分文件] -->
+			<MaxFileLineSize>1000</MaxFileLineSize>
+		</GMWorkDataAccess>
+	</DBSetting>
+
+	<CacheSetting>
+		<UserManager>
+			<!--GMS内存信息监控密码 -->
+			<GmsMonitorPsw>kola520</GmsMonitorPsw>
+			<!--所有权限声明 注意：所有的code不能重复 -->
+			<LimitsOfAuthorityDeclaration>
+				<loa menu="聊天" sonMenu="即时监控" code="1" />
+				<!--<loa menu="聊天" sonMenu="历史翻查" code ="2"/> -->
+
+				<!--<loa menu="角色" sonMenu="资料查询" code="3" />-->
+				<loa menu="角色" sonMenu="数据查改" code="3" />
+				<loa menu="角色" sonMenu="数据修改" code="4" />
+				<!--<loa menu="角色" sonMenu="状态修改" code="5" />-->
+				<loa menu="角色" sonMenu="高级管理" code="17" />
+				<!--<loa menu="角色" sonMenu="数据修改2" code ="15"/> -->
+				<!--<loa menu="系统" sonMenu="服务器信息" code ="6"/> -->
+				<loa menu="系统" sonMenu="在线人数" code="7" />
+				<!--<loa menu="系统" sonMenu="服务器资料查询" code="12" />-->
+				<!--<loa menu="系统" sonMenu="GM服务器信息" code ="14"/> -->
+				<loa menu="信件" sonMenu="邮件服务" code="8" />
+				<loa menu="公告" sonMenu="系统公告" code="9" />
+				<loa menu="日志" sonMenu="日志查看" code="10" />
+				<loa menu="日志" sonMenu="GM统计" code="16" />
+				<loa menu="权限" sonMenu="权限分配" code="11" />
+				<!--<loa menu="账号" sonMenu="修改密码" code ="13"/> -->
+			</LimitsOfAuthorityDeclaration>
+		</UserManager>
+
+		<GSManager>
+
+			<!-- GMS登陆GS的帐号和密码 -->
+			<userAccount user="gm10086" psw="6600000" />
+
+			<!-- 是否多线程加载数据 -->
+			<MutiThreadLoadData>true</MutiThreadLoadData>
+
+			<!-- 角色邮件历史记录在内存中缓存的时长 -->
+			<!-- 策划要求5天即120小时,测试期间由于内存不满足要求,使用2天即48小时 -->
+			<!-- 程序会根据<GSMailDataAccess>.<LogKeepDays>的天数(包含今天)加载日志,再使用此小时值去过滤日志 -->
+			<RoleMailHistoryShowDays>120</RoleMailHistoryShowDays>
+
+			<!-- GM操作日志在内存中缓存的时长 -->
+			<!-- 策划要求7天即168小时,测试期间由于内存不满足要求,使用2天即48小时 -->
+			<!-- 程序会根据<GMOpDataAccess>.<LogKeepDays>的天数(包含今天)加载日志,再使用此小时值去过滤日志 -->
+			<GMOpLogShowDays>168</GMOpLogShowDays>
+		</GSManager>
+	</CacheSetting>
+
+
+	<GMLogicSetting>
+
+		<!-- 当前服务器组的名称 暂时主要用于短信通知 -->
+		<GMSName>KMP_GMS</GMSName>
+
+		<!-- GS状态的广播周期（秒）,建议10秒 -->
+		<StateBroadcastPeriod>20</StateBroadcastPeriod>
+		<!-- GMS 定时 PING GS的周期（秒）,建议20秒 -->
+		<GMSPingGSPeriod>20</GMSPingGSPeriod>
+		<!--刷新GM操作日志内容到GMC的周期(秒),建议10秒 -->
+		<GMOPLogFreshPeriod>10</GMOPLogFreshPeriod>
+		<!--GMS内存信息采集打印的周期(秒),建议60秒 -->
+		<GmsMemPrintPeriod>60</GmsMemPrintPeriod>
+
+		<!-- 短信警示电话号码 CountTime(分钟)表示GM修改数据的统计时间周期,策划要求60分钟,测试时使用1分钟 -->
+		<WarnMobileNum CountTime="60" firstUrl="10.10.0.199:8080">
+			<Num>13242860406</Num>
+		</WarnMobileNum>
+	</GMLogicSetting>
+
+
+	<!-- 文件清理配置,针对txt文件 work:是否启用文件清理机制 当硬盘剩余可用空间小于KeepUsableSpaceSize时,首先尝试删除MaxKeepFileDays天前的文件; 
+		若硬盘剩余可用空间仍小于KeepUsableSpaceSize,则按旧到新删除日志文件,直到空间满足要求; 但至于会保留一天的文件 -->
+	<FileClearSetting work="true">
+
+		<!--硬盘警戒容量(单位:M) -->
+		<KeepUsableSpaceSize>20000</KeepUsableSpaceSize>
+
+		<!--文件最多保留天数(最少保留天数视乎硬盘容间),一般设置10天,测试期间设置4天 -->
+		<MaxKeepFileDays>10</MaxKeepFileDays>
+
+		<!--扫描主目录(采用子目录
+		递归扫描) -->
+		<MainDir>${webapp.root}/db/GSServer/</MainDir>
+	</FileClearSetting>
+
+	<!--其他自定义设置或数据 <SelfDefine> </SelfDefine> -->
+</ServerConfig>

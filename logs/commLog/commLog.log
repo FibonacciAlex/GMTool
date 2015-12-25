@@ -1,0 +1,363 @@
+1225 20:43:36.870 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 20:43:37.220 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x5cd7c61e, /10.10.0.21:5018 => /10.10.0.21:8887]
+1225 20:43:37.233 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x5cd7c61e, /10.10.0.21:5018 => /10.10.0.21:8887]
+1225 20:43:37.234 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 20:43:37.257 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 20:43:37.287 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 20:43:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:43:40.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:43:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:43:55.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:44:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:44:10.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:44:25.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:44:25.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:44:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:44:35.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:44:50.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:44:50.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:45:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:45:05.016 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:45:20.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:45:20.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:45:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:45:30.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:45:45.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:45:45.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:46:00.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:46:00.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:46:15.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:46:15.015 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:46:25.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:46:25.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:46:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:46:40.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:46:55.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:46:55.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:47:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:47:05.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:47:30.059 [pool-1-thread-1] ERROR commLogger - GMS2FE heartbeat exception=hostname can't be null
+1225 20:47:30.076 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 20:47:30.241 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x426ef63b, /10.10.0.21:5060 => /10.10.0.21:8887]
+1225 20:47:30.255 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x426ef63b, /10.10.0.21:5060 => /10.10.0.21:8887]
+1225 20:47:30.255 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 20:47:30.263 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 20:47:30.277 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 20:47:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:47:35.015 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:47:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:47:50.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:48:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:48:05.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:48:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:48:20.013 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 20:59:52.571 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 20:59:52.759 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x561e094e, /10.10.0.21:5165 => /10.10.0.21:8887]
+1225 20:59:52.775 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x561e094e, /10.10.0.21:5165 => /10.10.0.21:8887]
+1225 20:59:52.775 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 20:59:52.785 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 20:59:52.801 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 20:59:55.010 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 20:59:55.015 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:00:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:00:10.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:00:25.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:00:25.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:00:40.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:00:40.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:00:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:00:55.016 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:01:13.922 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:01:14.130 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x4e5b7093, /10.10.0.21:5180 => /10.10.0.21:8887]
+1225 21:01:14.151 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x4e5b7093, /10.10.0.21:5180 => /10.10.0.21:8887]
+1225 21:01:14.153 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:01:14.166 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:01:14.184 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:01:15.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:01:15.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:01:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:01:30.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:01:50.813 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:01:51.003 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x2e1f8890, /10.10.0.21:5191 => /10.10.0.21:8887]
+1225 21:01:51.021 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x2e1f8890, /10.10.0.21:5191 => /10.10.0.21:8887]
+1225 21:01:51.022 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:01:51.033 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:01:51.045 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:01:55.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:01:55.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:02:39.733 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:02:39.928 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x2da889e8, /10.10.0.21:5211 => /10.10.0.21:8887]
+1225 21:02:39.950 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x2da889e8, /10.10.0.21:5211 => /10.10.0.21:8887]
+1225 21:02:39.951 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:02:39.962 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:02:39.982 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:02:40.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:02:40.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:03:12.086 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:03:12.337 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x7a8eeb30, /10.10.0.21:5223 => /10.10.0.21:8887]
+1225 21:03:12.362 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x7a8eeb30, /10.10.0.21:5223 => /10.10.0.21:8887]
+1225 21:03:12.363 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:03:12.379 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:03:12.407 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:03:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:03:15.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:03:25.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:03:25.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:03:40.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:03:40.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:03:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:03:55.014 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:04:10.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:04:10.015 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:04:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:04:20.023 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:04:35.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:04:35.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:04:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:04:50.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:05:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:05:00.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:05:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:05:15.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:05:30.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:05:30.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:05:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:05:40.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:05:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:05:55.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:06:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:06:05.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:06:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:06:20.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:06:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:06:35.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:06:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:06:50.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:07:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:07:00.017 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:07:19.883 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:07:20.097 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x3c0e3e4f, /10.10.0.21:5250 => /10.10.0.21:8887]
+1225 21:07:20.114 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x3c0e3e4f, /10.10.0.21:5250 => /10.10.0.21:8887]
+1225 21:07:20.114 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:07:20.121 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:07:20.139 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:09:26.868 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:09:27.010 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x606a46a1, /10.10.0.21:5291 => /10.10.0.21:8887]
+1225 21:09:27.024 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x606a46a1, /10.10.0.21:5291 => /10.10.0.21:8887]
+1225 21:09:27.025 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:09:27.035 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:09:27.068 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:09:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:09:30.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:09:45.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:09:45.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:15:35.938 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:15:36.137 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x642e4992, /10.10.0.21:5335 => /10.10.0.21:8887]
+1225 21:15:36.156 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x642e4992, /10.10.0.21:5335 => /10.10.0.21:8887]
+1225 21:15:36.157 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:15:36.170 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:15:36.198 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:15:40.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:15:40.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:15:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:15:55.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:16:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:16:10.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:16:25.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:16:25.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:16:35.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:16:35.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:16:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:16:50.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:17:05.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:17:05.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:17:15.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:17:15.013 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:17:30.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:17:30.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:17:40.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:17:40.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:17:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:17:55.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:18:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:18:05.013 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:18:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:18:20.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:18:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:18:35.024 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:18:50.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:18:50.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:19:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:19:05.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:19:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:19:20.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:19:35.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:19:35.025 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:19:45.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:19:45.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:20:00.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:20:00.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:20:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:20:10.036 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:20:25.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:20:25.013 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:20:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:20:35.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:20:45.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:20:45.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:21:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:21:00.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:21:15.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:21:15.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:21:30.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:21:30.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:21:45.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:21:45.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:22:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:22:00.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:22:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:22:15.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:22:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:22:30.004 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:22:45.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:22:45.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:22:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:22:55.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:23:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:23:05.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:23:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:23:20.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:23:30.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:23:30.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:23:45.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:23:45.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:24:00.004 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:24:00.015 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:24:15.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:24:15.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:24:25.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:24:25.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:24:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:24:40.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:24:55.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:24:55.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:25:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:25:05.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:25:20.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:25:20.003 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:25:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:25:30.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:25:45.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:25:45.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:26:00.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:26:00.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:26:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:26:15.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:26:30.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:26:30.014 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:26:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:26:40.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:26:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:26:55.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:27:26.375 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:27:26.562 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x111608f8, /10.10.0.21:5508 => /10.10.0.21:8887]
+1225 21:27:26.578 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x111608f8, /10.10.0.21:5508 => /10.10.0.21:8887]
+1225 21:27:26.578 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:27:26.591 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:27:26.608 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:27:30.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:27:30.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:27:45.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:27:45.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:27:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:27:55.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:28:10.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:28:10.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:28:25.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:28:25.013 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:28:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:28:40.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:28:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:28:55.004 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:29:10.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:29:10.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:29:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:29:20.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:29:30.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:29:30.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:29:45.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:29:45.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:29:55.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:29:55.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:30:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:30:10.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:30:25.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:30:25.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:30:40.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:30:40.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:30:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:30:50.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:31:02.339 [localhost-startStop-1] INFO  commLogger - >>>>>>>GM2FE  net init
+1225 21:31:02.555 [localhost-startStop-1] INFO  commLogger - > GMS2FE CONNECT=[id: 0x561e094e, /10.10.0.21:5535 => /10.10.0.21:8887]
+1225 21:31:02.570 [localhost-startStop-1] INFO  commLogger - > GMS2FE SHAKE HAND=[id: 0x561e094e, /10.10.0.21:5535 => /10.10.0.21:8887]
+1225 21:31:02.570 [localhost-startStop-1] INFO  commLogger - >>>>>> GMS2FE start!
+1225 21:31:02.580 [New I/O  worker #1] INFO  commLogger - FE hand shake response=Hi! I'm FE~ , try to valify identification~
+1225 21:31:02.596 [New I/O  worker #1] WARN  commLogger - FE 身份验证成功
+1225 21:31:05.004 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:31:05.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:31:20.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:31:20.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:31:35.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:31:35.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:31:50.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:31:50.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:32:05.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:32:05.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:32:20.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:32:20.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:32:35.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:32:35.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:32:50.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:32:50.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:33:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:33:00.021 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:33:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:33:15.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:33:30.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:33:30.017 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:33:45.017 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:33:45.035 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:34:00.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:34:00.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:34:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:34:15.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:34:30.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:34:30.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:34:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:34:40.004 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:34:55.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:34:55.009 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:35:10.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:35:10.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:35:25.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:35:25.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:35:35.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:35:35.008 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:35:50.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:35:50.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:36:00.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:36:00.012 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:36:15.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:36:15.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:36:25.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:36:25.011 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:36:40.001 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:36:40.005 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:36:50.003 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:36:50.007 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:37:05.000 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:37:05.003 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:37:15.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:37:15.010 [New I/O  worker #1] DEBUG commLogger - FE return GS list
+1225 21:37:30.002 [pool-1-thread-1] DEBUG commLogger - FE request gs list~
+1225 21:37:30.006 [New I/O  worker #1] DEBUG commLogger - FE return GS list

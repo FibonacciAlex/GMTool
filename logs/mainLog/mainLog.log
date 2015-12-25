@@ -1,0 +1,122 @@
+1225 18:30:21.310 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 18:30:21.349 [localhost-startStop-1] ERROR mainLogger - ************GMS System start fail*****
+1225 20:43:36.750 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 20:43:36.830 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 20:43:36.831 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 20:43:36 CST 2015
+1225 20:43:36.841 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 20:43:36.842 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 20:43:36.844 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 20:43:36.845 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 20:43:36.854 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 20:43:36.854 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 20:43:36.854 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 20:47:30.045 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 20:47:30.069 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 20:47:30.070 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 20:47:30 CST 2015
+1225 20:47:30.072 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 20:47:30.073 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 20:47:30.073 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 20:47:30.073 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 20:47:30.076 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 20:47:30.076 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 20:47:30.076 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 20:59:52.527 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 20:59:52.550 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 20:59:52.551 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 20:59:52 CST 2015
+1225 20:59:52.555 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 20:59:52.555 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 20:59:52.555 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 20:59:52.556 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 20:59:52.558 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 20:59:52.558 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 20:59:52.558 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:01:13.854 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:01:13.891 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:01:13.893 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:01:13 CST 2015
+1225 21:01:13.897 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:01:13.898 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:01:13.900 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:01:13.901 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:01:13.904 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:01:13.905 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:01:13.906 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:01:50.757 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:01:50.772 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:01:50.774 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:01:50 CST 2015
+1225 21:01:50.777 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:01:50.778 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:01:50.779 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:01:50.780 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:01:50.783 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:01:50.784 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:01:50.784 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:02:39.686 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:02:39.708 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:02:39.710 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:02:39 CST 2015
+1225 21:02:39.714 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:02:39.715 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:02:39.715 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:02:39.715 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:02:39.719 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:02:39.719 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:02:39.719 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:03:12.031 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:03:12.052 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:03:12.053 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:03:12 CST 2015
+1225 21:03:12.058 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:03:12.060 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:03:12.061 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:03:12.062 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:03:12.066 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:03:12.066 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:03:12.067 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:07:19.828 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:07:19.847 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:07:19.850 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:07:19 CST 2015
+1225 21:07:19.854 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:07:19.855 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:07:19.857 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:07:19.857 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:07:19.860 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:07:19.861 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:07:19.861 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:09:26.779 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:09:26.843 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:09:26.845 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:09:26 CST 2015
+1225 21:09:26.850 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:09:26.851 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:09:26.851 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:09:26.851 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:09:26.854 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:09:26.854 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:09:26.854 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:15:35.863 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:15:35.899 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:15:35.908 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:15:35 CST 2015
+1225 21:15:35.913 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:15:35.915 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:15:35.915 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:15:35.916 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:15:35.919 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:15:35.920 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:15:35.922 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:27:26.334 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:27:26.350 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:27:26.356 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:27:26 CST 2015
+1225 21:27:26.361 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:27:26.361 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:27:26.361 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:27:26.361 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:27:26.364 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:27:26.364 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:27:26.364 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********
+1225 21:31:02.261 [localhost-startStop-1] INFO  mainLogger - ***********  开始初始化【DB】 ******************
+1225 21:31:02.290 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM用户模块 初始启动完成 URL=GMAccount.xml
+1225 21:31:02.295 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM操作日志模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GMOperationLog/ Fri Dec 25 21:31:02 CST 2015
+1225 21:31:02.306 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS聊天模块 初始启动完成 URL=${webapp.root}/db/GSServer/GS_GSName/GSChatLog/
+1225 21:31:02.309 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS状态模块 初始启动完成
+1225 21:31:02.309 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS公告模块 初始启动完成
+1225 21:31:02.309 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS邮件模块 初始启动完成
+1225 21:31:02.315 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GS禁呼模块 初始启动完成 URL=ForbidCallGM.xml
+1225 21:31:02.315 [localhost-startStop-1] INFO  mainLogger - >>>>> GM DB GM统计日志模块 初始启动完成 
+1225 21:31:02.315 [localhost-startStop-1] INFO  mainLogger - *************  开始初始化 【网络】 ***********

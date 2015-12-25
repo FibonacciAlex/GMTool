@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+	<!-- task任务扫描注解 -->
+	<task:annotation-driven/>  
+	<context:annotation-config/>
+    <context:component-scan base-package="com.server"/> <!-- 扫描注解 -->
+	
+	
+    <!-- 配置使Spring采用CGLIB代理 
+    <aop:aspectj-autoproxy proxy-target-class="true"/> -->
+
+    <!-- 启用对事务注解的支持 
+    <tx:annotation-driven transaction-manager="transactionManager"/>  -->
+    
+    <!-- GS管理器设置 -->
+    <bean name="GSManager" class="com.server.gs.GSManager">
+    	<property name="GmUser" value="camus105" />
+    	<property name="GmPwd" value="6600000" />
+    	<property name="MultiThreadLoad" value="true" />
+    	
+    	<!-- 角色邮件历史记录在内存中缓存的时长 -->
+		<!-- 策划要求5天即120小时,测试期间由于内存不满足要求,使用2天即48小时 -->
+		<!-- 程序会根据<GSMailDataAccess>.<LogKeepDays>的天数(包含今天)加载日志,再使用此小时值去过滤日志 -->
+		<property name="RoleMailHistoryShowDays" value="120" />
+    	
+    	<!-- GM操作日志在内存中缓存的时长 -->
+		<!-- 策划要求7天即168小时,测试期间由于内存不满足要求,使用2天即48小时 -->
+		<!-- 程序会根据<GMOpDataAccess>.<LogKeepDays>的天数(包含今天)加载日志,再使用此小时值去过滤日志 -->
+		<property name="GMOpLogShowDays" value="168" />
+    </bean>
+    
+    
+    <bean name="dbServiceFactory" class="com.server.service.DBServiceFactory" />
+    
+    <!-- 配置FE网络设置
+    <bean name="NetSetting" class="com.server.config.NetConfig">
+    	<property name="FEip" value="10.10.0.21" />
+    	<property name="port" value="8887" />
+    	<property name="GSListPeroid" value="10" />  获取数据的周期(毫秒)ping间隔 -->
+    	
+    	<!-- 消息处理线程池相关设定
+    	<property name="corePoolSize" value="8" />
+    	<property name="maxChannelMemorySize" value="1024000" />
+    	<property name="maxTotalMemorySize" value="2048000000" />
+    	<property name="keepAliveTimeMillis" value="10000" />
+    </bean>
+     -->
+    
+	<!--
+	<bean id="commonTask" class="com.server.CommonTask"/>
+	
+	 quartz 任务调度设置  此方法不够灵活 ，只测试，不使用  start
+	 <bean name="quartzJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.server.QuartzJob" />
+        <property name="jobDataAsMap">
+          <map>
+            <entry key="task" value-ref="commonTask" />
+          </map>
+        </property>
+    </bean>
+     
+    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="quartzJob" />
+        <property name="startDelay" value="10000" />    延时启动10s  
+        <property name="cronExpression" value="0/20 * * * * ?" />
+    </bean>
+  
+
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobDetails">
+            <list>
+                <ref bean="quartzJob" />
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="cronTrigger" />
+            </list>
+        </property>
+    </bean>
+	 quartz 任务定时调度设置  end-->
+
+    <!-- Cache配置   暂时还有没有用到  先注释
+    <cache:annotation-driven cache-manager="cacheManager"/>
+    <bean id="ehCacheManagerFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+          p:configLocation="classpath:ehcache.xml"/>
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"
+          p:cacheManager-ref="ehCacheManagerFactory"/>
+           -->
+           
+           
+</beans>
