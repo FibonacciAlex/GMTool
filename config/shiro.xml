@@ -34,7 +34,7 @@
 				/app/** = anon
 				/assets/** = anon
 				<!-- 登录页允许访问 -->
-				/login = anon
+				/user/login = anon
 				<!-- 其他资源需要认证 -->
 				/** = authc
 			</value>
