@@ -17,6 +17,11 @@ public class User {
 	
 	@JsonProperty("ca")
 	private String ca;//其它属性
+	
+	
+	
+	public User() {
+	}
 	public User(String userName, String pwd, String ca) {
 		super();
 		this.userName = userName;

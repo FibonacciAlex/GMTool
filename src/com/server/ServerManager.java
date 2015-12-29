@@ -57,8 +57,8 @@ public class ServerManager extends ContextLoaderListener{
 			
 			
 			
-			ServerLogFactory.mainLogger.info("*************  开始初始化 【网络】 ***********");
-			initNet(root.getChild("NetSetting"));
+//			ServerLogFactory.mainLogger.info("*************  开始初始化 【网络】 ***********");
+//			initNet(root.getChild("NetSetting"));
 			
 //			WebApplicationContext context2 = getCurrentWebApplicationContext();
 //			NetConfig bean = (NetConfig) context2.getBean("NetSetting");

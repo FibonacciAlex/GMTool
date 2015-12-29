@@ -11,7 +11,7 @@ public class GMS2FEHeartBeatTask implements CommonTask{
 	@Scheduled(cron="0/5 * *  * * ? ")   //每5秒执行一次
 	@Override
 	public void doWork() {
-		GameGM2FE.getInstance().onTimeSignal();
+//		GameGM2FE.getInstance().onTimeSignal();
 	}
 
 }

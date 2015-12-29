@@ -28,13 +28,13 @@ public class UserController {
 	 * 登录
 	 * @return
 	 */
-	@RequestMapping(value="/login", method=RequestMethod.POST)
+	@RequestMapping(value="/loginServer", method = RequestMethod.POST)
 	public String login(User user, BindingResult result, Model model, HttpServletRequest request){
 		try {
 			
 			Subject subject = SecurityUtils.getSubject();
 			if(subject.isAuthenticated()){
-				return "redirect:/index";  //直接redirect  避免用户刷新页面时重复提交表单
+				return "redirect:/main";  //直接redirect  避免用户刷新页面时重复提交表单
 			}
 			if(result.hasErrors()){
 				model.addAttribute("error", "参数错误！");
@@ -50,7 +50,7 @@ public class UserController {
 			model.addAttribute("error", "用户名或密码错误");
 			return "login";
 		}
-		return "redirect:/";
+		return "redirect:/main";
 	}
 	
 	/**
@@ -65,4 +65,5 @@ public class UserController {
         // 登出操作
         return "login";
     }
+    
 }

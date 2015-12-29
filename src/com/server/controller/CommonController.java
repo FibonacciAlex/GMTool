@@ -23,8 +23,8 @@ public class CommonController {
 	 * @param request
 	 * @return
 	 */
-	@RequestMapping("/index")
-	public String index(HttpServletRequest request){
+	@RequestMapping("/login")
+	public String login(HttpServletRequest request){
 		
 		//这里应该要判断一下，如果登录了，进入index,如果没有登录，返回login页面
 		HttpSession session = request.getSession();

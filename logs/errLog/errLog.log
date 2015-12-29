@@ -1,11 +1,21 @@
-1226 11:56:29.316 [localhost-startStop-1] ERROR o.a.s.w.e.EnvironmentLoader - Shiro environment initialization failed
-org.apache.shiro.config.ConfigurationException: Shiro INI configuration was either not found or discovered to be empty/unconfigured.
-	at org.apache.shiro.web.env.IniWebEnvironment.init(IniWebEnvironment.java:87) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:45) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:40) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoader.createEnvironment(EnvironmentLoader.java:221) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:133) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoaderListener.contextInitialized(EnvironmentLoaderListener.java:58) [shiro-all-1.2.4.jar:1.2.4]
+1229 12:20:37.067 [localhost-startStop-1] ERROR o.s.w.c.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilter' defined in URL [file:/D:/Project/EclipseWeb/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/GameTool/WEB-INF/classes/shiro.xml]: Cannot resolve reference to bean 'securityManager' while setting bean property 'securityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in URL [file:/D:/Project/EclipseWeb/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/GameTool/WEB-INF/classes/shiro.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.util.ArrayList' to required type 'org.apache.shiro.realm.Realm' for property 'realm'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [java.util.ArrayList] to required type [org.apache.shiro.realm.Realm] for property 'realm': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1456) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:232) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:618) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:467) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) [spring-web-4.0.6.RELEASE.jar:4.0.6.RELEASE]
 	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4992) [catalina.jar:7.0.55]
 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5490) [catalina.jar:7.0.55]
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [catalina.jar:7.0.55]
@@ -15,24 +25,26 @@ org.apache.shiro.config.ConfigurationException: Shiro INI configuration was eith
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_66]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_66]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_66]
-1226 16:03:45.043 [pool-1-thread-1] ERROR commLogger - GMS2FE heartbeat exception=hostname can't be null
-1226 17:18:48.116 [localhost-startStop-1] ERROR o.a.s.w.e.EnvironmentLoader - Shiro environment initialization failed
-org.apache.shiro.config.ConfigurationException: Unable to load resource path 'classpath*:shiro.xml'
-	at org.apache.shiro.web.env.IniWebEnvironment.convertPathToIni(IniWebEnvironment.java:268) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.IniWebEnvironment.createIni(IniWebEnvironment.java:163) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.IniWebEnvironment.getSpecifiedIni(IniWebEnvironment.java:121) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.IniWebEnvironment.init(IniWebEnvironment.java:77) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:45) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.util.LifecycleUtils.init(LifecycleUtils.java:40) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoader.createEnvironment(EnvironmentLoader.java:221) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:133) ~[shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.shiro.web.env.EnvironmentLoaderListener.contextInitialized(EnvironmentLoaderListener.java:58) [shiro-all-1.2.4.jar:1.2.4]
-	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4992) [catalina.jar:7.0.55]
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5490) [catalina.jar:7.0.55]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [catalina.jar:7.0.55]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575) [catalina.jar:7.0.55]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565) [catalina.jar:7.0.55]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_66]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_66]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_66]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_66]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in URL [file:/D:/Project/EclipseWeb/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/GameTool/WEB-INF/classes/shiro.xml]: Initialization of bean failed; nested exception is org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.util.ArrayList' to required type 'org.apache.shiro.realm.Realm' for property 'realm'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [java.util.ArrayList] to required type [org.apache.shiro.realm.Realm] for property 'realm': no matching editors or conversion strategy found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.ConversionNotSupportedException: Failed to convert property value of type 'java.util.ArrayList' to required type 'org.apache.shiro.realm.Realm' for property 'realm'; nested exception is java.lang.IllegalStateException: Cannot convert value of type [java.util.ArrayList] to required type [org.apache.shiro.realm.Realm] for property 'realm': no matching editors or conversion strategy found
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:474) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:511) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:505) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1502) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1461) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 30 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot convert value of type [java.util.ArrayList] to required type [org.apache.shiro.realm.Realm] for property 'realm': no matching editors or conversion strategy found
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:267) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:459) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 36 common frames omitted
+1229 12:20:37.289 [localhost-startStop-1] ERROR mainLogger - ************GMS System start fail*****

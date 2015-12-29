@@ -16,10 +16,10 @@
 	<!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器-->
 	<context:component-scan base-package="com.server.controller" /> 
 	
-	<!-- 定义首页 -->
-    <mvc:view-controller path="/" view-name="redirect:/login.html" />
     <mvc:default-servlet-handler />
 	<mvc:annotation-driven />
+	<!-- 默认访问跳转到登录页面(即定义无需Controller的url<->view直接映射) -->  
+    <mvc:view-controller path="/" view-name="forward:/login.html"/>
 	
 	<!-- 国际化的消息资源文件（本系统中主要用于显示/错误消息定制） -->
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
