@@ -56,6 +56,8 @@ var Login = function() {
                 passwordInput.val(sha256_digest(passwordInput.val()));
                 form.submit();
             }
+            
+            
         });
 
         $('.login-form input').keypress(function(e) {

@@ -2,6 +2,7 @@ package com.server.model;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 
+
 /**
  * 用户数据结构
  * @author Alex

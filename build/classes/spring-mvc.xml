@@ -16,8 +16,32 @@
 	<!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器-->
 	<context:component-scan base-package="com.server.controller" /> 
 	
-    <mvc:default-servlet-handler />
+    <mvc:default-servlet-handler /><!-- 这样spring会用默认的Servlet来响应静态文件 -->
+    
+    
+    <!-- 开启注解参数认证 -->
+<!--     <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"/> -->
+    
+    
+    
+    <!-- 设置参数转换的jsonMapper -->
+    <!-- <bean id="objectMapper" class="com.server.util.CustomObjectMapper" init-method="init">
+    	<property name="caseLower" value="true" />
+    	<property name="dateFormatPattern" value="yyyy-MM-dd HH:mm:ss" />
+    </bean> -->
+    
+    
+	<!--  Jackson 来提供 JSON 的序列化操作  -->
+	<!-- <mvc:annotation-driven>
+		<mvc:message-converters>
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="objectMapper" value="objectMapper" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven> -->
+	
 	<mvc:annotation-driven />
+	
 	<!-- 默认访问跳转到登录页面(即定义无需Controller的url<->view直接映射) -->  
     <mvc:view-controller path="/" view-name="forward:/login.html"/>
 	
@@ -46,9 +70,9 @@
     </bean>
 	
 	
-	<!-- 对静态资源文件的访问  -->  
-    <mvc:resources mapping="/app/**" location="/app/" cache-period="31556926"/>  
-    <mvc:resources mapping="/assets/**" location="/assets/" cache-period="31556926"/>  
+	<!-- 对静态资源文件的访问   <mvc:default-servlet-handler /> 已经设置      所以这里不用再重复设置一次 -->  
+    <!-- <mvc:resources mapping="/app/**" location="/app/" cache-period="31556926"/>  
+    <mvc:resources mapping="/assets/**" location="/assets/" cache-period="31556926"/> -->  
 	
 	
 	

@@ -29,7 +29,7 @@ public class LoginFilter extends AccessControlFilter{
 	protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
 		ServerLogFactory.mainLogger.info("------------------------------login filter access denied~");
 		
-		return false;
+		return true;
 	}
 
 }
