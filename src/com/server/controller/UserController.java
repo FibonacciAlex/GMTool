@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.server.config.SystemConstant;
 import com.server.model.User;
@@ -22,7 +23,7 @@ import com.server.service.GMUserService;
  * @author Alex
  * @author 2015年12月24日 下午6:16:43
  */
-@Controller
+@RestController
 @RequestMapping(value="/user")
 public class UserController {
 	
@@ -45,8 +46,9 @@ public class UserController {
 //				model.addAttribute("error", "参数错误！");
 //				return "redirect:/login";
 //			}
-			String name = (String) request.getAttribute("username");
-			String pwd = (String) request.getAttribute("password");
+			
+			String name = request.getParameter("username");
+			String pwd = request.getParameter("password");
 			User user = new User(name, pwd, null);
 			//验证
 			subject.login(new UsernamePasswordToken(user.getUserName(), user.getPwd()));

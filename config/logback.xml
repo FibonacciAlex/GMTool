@@ -17,7 +17,7 @@
 	<!-- 保存日志的周期数，即保留多少个周期的日志 -->
 	<property name="LOG_KEEP" value="48" />
 	<!-- 保存日志的单个周期内，按大小分文件，单位支持bytes,KB,MB,GB -->
-	<property name="LOG_KEEP_MAXSIZE" value="10MB" />
+	<property name="LOG_KEEP_MAXSIZE" value="1MB" />
 	<!-- 保存日志的后缀名，.zip可以控制是否压缩 -->
 	<!-- 客户端的滚动日志，统一后缀名与服务器端不同，以免直接拷贝粘贴产生文件名称冲突 -->
 	<property name="LOG_ROLL_POSTFIX" value="log.zip" />

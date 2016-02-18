@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.server.config.SystemConstant;
 
@@ -15,7 +16,7 @@ import com.server.config.SystemConstant;
  * @author Alex
  * @author 2015年12月23日 下午5:49:39
  */
-@Controller
+@RestController
 public class CommonController {
 
 	/**

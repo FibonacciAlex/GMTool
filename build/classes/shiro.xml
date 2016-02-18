@@ -40,7 +40,7 @@
 		<property name="securityManager" ref="securityManager" />
 		
 		<!-- 要求登录时的链接(可根据项目的URL进行替换),非必须的属性,默认会自动寻找Web工程根目录下的"/login.jsp"页面 -->  
-		<property name="loginUrl" value="/login"/>
+		<!-- <property name="loginUrl" value="/login"/> -->
 	
 		<!-- <property name="filters">
 			<util:map>
@@ -64,8 +64,8 @@
 		<!-- anon 表示匿名访问（不需要认证与授权），authc 表示需要认证  -->
 		<property name="filterChainDefinitions">
 			<value>
-				/app/** = anon
-				/assets/** = anon
+				/app/** = authc, roles[administrator]
+				/assets/** = authc
 				/page/** = anon
 				/login = anon 
 				/** = loginFilter  <!--  如果设置为默认的 authc, 则无法通过，会直接返回login页面  -->

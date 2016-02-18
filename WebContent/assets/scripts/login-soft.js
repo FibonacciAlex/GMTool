@@ -52,9 +52,25 @@ var Login = function() {
             },
 
             submitHandler : function(form) {
+            	var account = $('#username').val();
                 var passwordInput = $('[name="password"]');
+//                bootbox.alert("password input before :" + passwordInput);
                 passwordInput.val(sha256_digest(passwordInput.val()));
-                form.submit();
+//                form.submit();
+//                swal("password input after :" + passwordInput.val());
+                //在此执行提交  所以应该在这里修改
+                
+                $.ajax({
+                	type:'post',
+                	url:'user/loginServer',
+                	contentType:'',
+                	dataType:'json',//可能返回的参数
+                	data:{username:account,password:passwordInput.val()},
+                	success:function(msg){
+            			swal("--------------");
+            		}
+                })
+                
             }
             
             
@@ -64,10 +80,16 @@ var Login = function() {
             if (e.which == 13) {
                 if ($('.login-form').validate().form()) {
                     $('.login-form').submit();
+                    swal("submit form 4444444~")
                 }
                 return false;
             }
         });
+        
+        /*jQuery('#loginBut').click(function() {
+            swal("submit button click~~~");
+            bootbox.alert("Hello world!");  
+        });*/
     }
 
     var handleForgetPassword = function() {
@@ -116,6 +138,7 @@ var Login = function() {
 
             submitHandler : function(form) {
                 form.submit();
+                swal("submit form 111111111111");
             }
         });
 
@@ -123,6 +146,7 @@ var Login = function() {
             if (e.which == 13) {
                 if ($('.forget-form').validate().form()) {
                     $('.forget-form').submit();
+                    swal("submit form 22222222222222");
                 }
                 return false;
             }
