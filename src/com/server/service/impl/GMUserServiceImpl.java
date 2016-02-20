@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 import com.server.model.User;
 import com.server.service.DBServiceFactory;
 import com.server.service.GMUserService;
-import com.server.util.JsonMapper;
+import com.server.util.CustomObjectMapper;
+import com.server.util.JsonUtil;
 import com.server.util.ServerLogFactory;
 
 @Service
@@ -43,7 +44,7 @@ public class GMUserServiceImpl implements GMUserService{
 				return null;
 			}
 			data = new User(name, pwd, ca);
-			String json = JsonMapper.toNormalJson(data);
+			String json = JsonUtil.generateJsonString(data);
 			propert.put(ElementKey + name, json);
 			
 			DBServiceFactory.save(fileName, fileTitle, propert);
@@ -67,7 +68,7 @@ public class GMUserServiceImpl implements GMUserService{
 				try {
 					String xmlGmName = key.replaceFirst(ElementKey, "");
 					if(xmlGmName.equals(name)){
-						data = JsonMapper.buildNormalMapper().fromJson(value, User.class);
+						data = JsonUtil.parseFromJson(value, User.class);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();

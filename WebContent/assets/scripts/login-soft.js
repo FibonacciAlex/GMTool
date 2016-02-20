@@ -62,13 +62,20 @@ var Login = function() {
                 
                 $.ajax({
                 	type:'post',
-                	url:'user/loginServer',
-                	contentType:'',
+                	url:'/user/login',
+                	contentType:'application/json',
                 	dataType:'json',//可能返回的参数
                 	data:{username:account,password:passwordInput.val()},
-                	success:function(msg){
-            			swal("--------------");
-            		}
+                	success:function(response){
+                		if(response.meta.success){
+                			//登录成功,保存cookie
+                			$.cookie(Cookie.TOKEN,response.data.token);
+                			$.cookie(Cookie.USERNAME,response,data.username)
+                			location.href='/view/main.html';
+                		}else{
+                			alert(response.meta.message);
+                		}
+                	}
                 })
                 
             }
